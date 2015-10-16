@@ -1,4 +1,4 @@
-var remotecamera = require('./index.js');
+var remotecamera = require('./index');
 
 // Execute it with some error handling
 remotecamera("http://httpbin.org/post", function(err, res, body){

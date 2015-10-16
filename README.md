@@ -1,16 +1,22 @@
 # `remote-camera`
 
-Takes a picture and posts it to a remote server. So far only for Debian/Ubuntu (tested) and Mac (untested). It takes a picture and attempts to upload it as soon as you call the main function. Minimal example that should work:
+Takes a picture and posts it to a remote server. So far only for Debian/Ubuntu (tested) and Mac (untested). It takes a picture and attempts to upload it as soon as you call the main function. Minimal example:
 
-```js
-require('remotecamera')("http://httpbin.org/post", console.log);
-```
-
-Install it with a simple
+Install it from the terminal with npm:
 
 ```js
 npm install remotecamera --save
 ```
+
+Create or edit app.js and write only this:
+
+```js
+// app.js
+require('remotecamera')("http://httpbin.org/post", console.log);
+```
+
+You should see on the terminal the returned output from `httpbin.org`.
+
 
 
 ## Full example
@@ -19,7 +25,7 @@ This is a working full example. After cloning the project, just do a `node examp
 
 ```js
 // Include the library
-var remotecamera = require('./index.js');
+var remotecamera = require('remotecamera');
 
 // Takes and posts an image with some error handling
 remotecamera("http://httpbin.org/post", function(err, res, body){
