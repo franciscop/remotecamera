@@ -4,14 +4,13 @@ Takes a picture and posts it to a remote server. So far only for Debian/Ubuntu (
 
 Install it from the terminal with npm:
 
-```js
+```bash
 npm install remotecamera --save
 ```
 
-Create or edit app.js and write only this:
+Create or edit `app.js` and write only this:
 
 ```js
-// app.js
 require('remotecamera')("http://httpbin.org/post", console.log);
 ```
 
