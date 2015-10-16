@@ -1,6 +1,6 @@
 # `remote-camera`
 
-Takes a picture and posts it to a remote server. So far only for Linux (Debian/Ubuntu) and Mac (untested). It takes a picture and attempts to upload it as soon as you call the main function. Minimal example that should work:
+Takes a picture and posts it to a remote server. So far only for Debian/Ubuntu (tested) and Mac (untested). It takes a picture and attempts to upload it as soon as you call the main function. Minimal example that should work:
 
 ```js
 require('remotecamera')("http://httpbin.org/post", console.log);
