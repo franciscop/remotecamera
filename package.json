@@ -1,0 +1,34 @@
+{
+  "name": "remote-camera",
+  "version": "1.0.0",
+  "description": "Capture an image and post it to an url",
+  "main": "index.js",
+  "scripts": {
+    "example": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franciscop/remote-camera.git"
+  },
+  "keywords": [
+    "remote",
+    "camera",
+    "upload",
+    "post",
+    "image",
+    "shot",
+    "cam"
+  ],
+  "author": "Francisco Presencia Fandos <publicfrancisco@hotmail.com> (http://francisco.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franciscop/remotecamera/issues"
+  },
+  "homepage": "https://github.com/franciscop/remotecamera",
+  "dependencies": {
+    "defaults": "^1.0.3",
+    "form-data": "^0.2.0",
+    "node-uuid": "^1.4.3",
+    "rpi-gpio": "^0.7.0"
+  }
+}
