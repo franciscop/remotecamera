@@ -26,8 +26,13 @@ This is a working full example. After cloning the project, just do a `node examp
 // Include the library
 var remotecamera = require('remotecamera');
 
+var options = {
+  url: "http://httpbin.org/post",
+  width: 1280, height: 720
+};
+
 // Takes and posts an image with some error handling
-remotecamera("http://httpbin.org/post", function(err, res, body){
+remotecamera(options, function(err, res, body){
   if (err) return console.log(err);
   if (res.statusCode !== 200) return console.log("Error: " + res.statusCode);
   console.log("Image posted!");
