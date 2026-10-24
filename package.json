@@ -10,7 +10,8 @@
   },
   "scripts": {
     "example": "node example.js",
-    "test": "node --test"
+    "test": "node --test",
+    "lint": "oxlint index.js -A unicorn/no-useless-spread"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,9 @@
     "url": "https://github.com/franciscop/remotecamera/issues"
   },
   "homepage": "https://github.com/franciscop/remotecamera",
+  "devDependencies": {
+    "oxlint": "^1.89.0"
+  },
   "peerDependencies": {
     "ffmpeg-static": "^5.0.0"
   },
