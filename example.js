@@ -1,10 +1,14 @@
-var remotecamera = require('./index');
+import fsp from "node:fs/promises";
+import camera from "remotecamera";
 
-// Execute it with some error handling
-remotecamera("http://httpbin.org/post", function(err, res, body){
-  if (err) return console.log(err);
-  if (res.statusCode !== 200) return console.log("Error: " + res.statusCode);
-  console.log("Image posted!");
-});
+const img = await camera.photo();
+await fsp.writeFile(img.name, new Uint8Array(await img.arrayBuffer()));
+console.log(`Saved ${img.name}`);
 
-require('http').createServer().listen(3000);
+await fsp.writeFile("clip.mp4", camera.video({ duration: 5 }));
+console.log("Saved clip.mp4");
+
+// Or upload the photo to your own server:
+// const form = new FormData();
+// form.append("image", img);
+// await fetch("https://example.com/upload", { method: "POST", body: form });
