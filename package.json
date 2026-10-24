@@ -2,21 +2,10 @@
   "name": "remotecamera",
   "version": "1.0.0",
   "description": "Take photos and record video from a webcam or Raspberry Pi camera, as web-standard File and ReadableStream",
-  "type": "module",
-  "exports": "./index.js",
-  "types": "index.d.ts",
-  "engines": {
-    "node": ">=20"
-  },
-  "scripts": {
-    "example": "node example.js",
-    "test": "node --test",
-    "lint": "oxlint index.js -A unicorn/no-useless-spread"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/franciscop/remotecamera.git"
-  },
+  "repository": "github:franciscop/remotecamera",
+  "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
+  "funding": "https://www.paypal.me/franciscopresencia/19",
+  "license": "MIT",
   "keywords": [
     "camera",
     "webcam",
@@ -27,12 +16,21 @@
     "libcamera",
     "ffmpeg"
   ],
-  "author": "Francisco Presencia Fandos <publicfrancisco@hotmail.com> (http://francisco.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/franciscop/remotecamera/issues"
+  "scripts": {
+    "demo": "node example.js",
+    "test": "bun test",
+    "lint": "oxlint index.js -A unicorn/no-useless-spread"
   },
-  "homepage": "https://github.com/franciscop/remotecamera",
+  "type": "module",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "exports": "./index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "oxlint": "^1.89.0"
   },

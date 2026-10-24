@@ -1,4 +1,4 @@
-# remotecamera
+# remotecamera [![npm install remotecamera](https://img.shields.io/badge/npm%20install-remotecamera-blue.svg)](https://www.npmjs.com/package/remotecamera) [![tests](https://github.com/franciscop/remotecamera/workflows/tests/badge.svg)](https://github.com/franciscop/remotecamera/actions) [![deps](https://img.shields.io/badge/deps-0-limegreen.svg)](https://github.com/franciscop/remotecamera/blob/master/package.json)
 
 Take photos and record video from a webcam or a Raspberry Pi camera module. Photos are a web-standard `File` and videos a `ReadableStream`, so they go straight into [`bucket`](https://github.com/franciscop/bucket), `node:fs/promises` or `fetch()`:
 
