@@ -1,6 +1,6 @@
 {
   "name": "remotecamera",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Take photos and record video from a webcam or Raspberry Pi camera, as web-standard File and ReadableStream",
   "repository": "github:franciscop/remotecamera",
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
